@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Will You Marry Me?</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hearts"></div>
+
+  <div class="container">
+    <h1>💖 Will You Marry Me? 💖</h1>
+    <p>Since I met you, everything has changed. My world is brighter. My heart is fuller. Will you be mine forever?</p>
+    
+    <div class="buttons">
+      <button onclick="yesClicked()">Yes 💍</button>
+      <button onclick="noClicked()">No 😢</button>
+    </div>
+
+    <div id="response" class="response"></div>
+  </div>
+
+  <!-- Optional: Background music -->
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

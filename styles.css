@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #ffe6eb, #ffc1cc);
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  z-index: 1;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.buttons button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons button:first-child {
+  background-color: #e91e63;
+  color: white;
+}
+
+.buttons button:last-child {
+  background-color: #f8bbd0;
+  color: #333;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+.response {
+  margin-top: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #4caf50;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Floating Hearts Animation */
+.hearts::before,
+.hearts::after {
+  content: "💗 💓 💖 💘 💝 💞";
+  font-size: 2rem;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  animation: floatHearts 15s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes floatHearts {
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(-100vh); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
